@@ -1,0 +1,28 @@
+.cat {
+	max-width:	251px;
+	max-height: 201px;
+	padding-left: 4px;
+}
+.catlist
+{
+list-style-type: none;
+float: left;
+margin-right: 15em;
+cursor:pointer;
+}
+#cat1, #cat2, #cat3, #cat4, #cat5 {
+	float: left;
+	/*clear: both;*/
+	margin-right: 14em;
+}
+#container {
+    border:2px solid black;
+    margin:5px;
+    width: 80%;
+}
+#container > div {
+    display:none;
+}
+/*#container > div:first-child {
+    display:block;
+}*/

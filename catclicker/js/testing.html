@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+  <script src="jquery-2.1.3.js"></script>
+
+</head>
+
+
+<body>
+
+<div id="container">
+  
+  <div class="catlist">
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+var $container = $('#container');
+var images = ['images/cat.jpg', 'images/cat2.jpg', 'images/cat3.jpg', 'images/cat4.jpg', 'images/cat5.jpg'];
+var names = ['George','Suay Maak','Lion King','Dixie','Dairy Cat'];
+var classes = ['George','Suay','Lion','Dixie','Dairy'];
+var idCats = ['count1','count2','count3','count4','count5'];
+var $catList = $('.catlist');
+
+var createList = function () {
+  for (var i = 0; i < names.length; i++) {
+    var name = names[i];
+    var clss = classes[i];
+    var $elem = $('<li class=' + clss + '>' + name + '</li>');
+
+    $elem.on('click', function() {
+      alert(name);
+    });
+    
+    $catList.append($elem);
+  }
+};
+
+createList();
+</script>
