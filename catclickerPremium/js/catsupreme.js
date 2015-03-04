@@ -1,4 +1,5 @@
 var $ul = $('.catList');
+var catNames = [];
 var model = [
 	
 	{
@@ -31,23 +32,19 @@ var model = [
 
 var octopus = {
 
-	createCatNames: function(){
-		var names = [];
-		for(i=0;model.length;i++){
-			names.push(model[i].name);
-		}
-		return names
-	}
+	createCatNames: 'nothing'
 
 
 }
 
 var view1 = {
-	displayList: function(){
-		for (i = 0; i < octopus.createCatNames.length; i++){
-			var elem = '<li>' + octopus.createCatNames[i] + '</li>';
-		$catList.append(elem);
+	init: function(){
+		for (i = 0; i < model[i].length; i++){
+			var listName = model[i].name
+			var elem = '<li>' + listName + '</li>';
+		$ul.append(elem);
 		}
 	}
 }
-view1.displayList();
+
+view1.init();
