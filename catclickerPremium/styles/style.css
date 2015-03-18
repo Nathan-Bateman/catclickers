@@ -1,12 +1,13 @@
-.cat {
+#currentCat {
 	max-width:	251px;
 	max-height: 201px;
 	padding-left: 4px;
 }
-.catlist
+li
 {
 list-style-type: none;
 float: left;
+clear: left;
 margin-right: 15em;
 cursor:pointer;
 }
@@ -15,13 +16,18 @@ cursor:pointer;
 	/*clear: both;*/
 	margin-right: 14em;
 }
-#container {
-    border:2px solid black;
+#container, #clickCount {
     margin:5px;
     width: 80%;
+    padding-left: 13em;
 }
 #container > div {
     display:none;
+}
+.admin {
+	float: left;
+	clear: left;
+	margin: 2em;
 }
 /*#container > div:first-child {
     display:block;

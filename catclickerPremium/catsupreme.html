@@ -5,19 +5,40 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
 <meta name="viewport" content="width=device-width, initial-scales=1">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
- <script src="js/jQuery.js"></script>
-<script type="text/javascript" src="js/catsupreme.js"></script>
+<script src="js/jQuery.js"></script>
+<script src="js/knockout-3.3.0"></script>
+
 <body>
 		<h1>My Favorite Kitties!</h1>
 
-<ul class='catlist'>
+<ul id='catlist'>
 </ul>
+<button id='admin' type="button">Admin</button>
 <div id='container'>
-	<img src="images/cat.jpg">
-
-
+	<h2 id='name'></h2>
+	<img id='currentCat' src="">
+	<p id='clickCount'></p>
+</div>
+<div id='form'>
+	<form>
+Name:<br>
+<input id='catname' type="text" name="name" value=''>
+<br>
+<br>
+Image URL:<br>
+<input id='url' type="text" name="url" value=''>
+<br>
+<br>
+Clicks:<br>
+<input id='clicks' type="text" name="clicks" value=''>
+<br>
+</form>
+<br><br>
+<button id='cancel' type="button">Cancel</button>
+<button id='save' type="button">Save</button>
 
 </div>
 
-
+ 
+<script src="js/catsupreme.js"></script>
 	</body>
